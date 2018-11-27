@@ -5,7 +5,9 @@ const lint = require('./lint');
 
 module.exports = (api, projectOptions) => {
   projectOptions = Object.assign({},projectOptions)
-  const { pluginOptions: { lintStyleOnBuild, stylelint } } = projectOptions;
+  let { pluginOptions } = projectOptions;
+  pluginOptions = Object.assign({},pluginOptions)
+  const { lintStyleOnBuild, stylelint } = pluginOptions
   if(!lintStyleOnBuild){
     lintStyleOnBuild === 'error'
   }
