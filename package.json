@@ -1,5 +1,5 @@
 {
-  "name": "@tencent/vue-cli-plugin-stylelint",
+  "name": "vue-cli-plugin-stylelint-plugin",
   "version": "1.2.2",
   "description": "stylelint plugin for vue-cli",
   "main": "index.js",
