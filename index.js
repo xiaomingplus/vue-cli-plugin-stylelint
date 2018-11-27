@@ -4,8 +4,11 @@ const CodeframeFormatter = require('stylelint-codeframe-formatter');
 const lint = require('./lint');
 
 module.exports = (api, projectOptions) => {
+  projectOptions = Object.assign({},projectOptions)
   const { pluginOptions: { lintStyleOnBuild, stylelint } } = projectOptions;
-  if (lintStyleOnBuild) {
+  if(!lintStyleOnBuild){
+    lintStyleOnBuild === 'error'
+  }
     api.chainWebpack((webpackConfig) => {
       /* eslint-disable indent */
       webpackConfig
@@ -43,7 +46,7 @@ module.exports = (api, projectOptions) => {
           });
       /* eslint-enable indent */
     });
-  }
+
 
   api.registerCommand('lint:style', {
     description: 'lint and fix source files',

@@ -1,6 +1,8 @@
-# @ascendancyy/vue-cli-plugin-stylelint
+# @tencent/vue-cli-plugin-stylelint
 
 > stylelint plugin for vue-cli
+
+fork from <https://github.com/ascendancyy/vue-cli-plugin-stylelint>
 
 ## Injected commands
 
@@ -25,7 +27,7 @@ Lint on (re)build with `stylelint-webpack-plugin` can be enabled with the `lintS
 module.exports = {
   // ...
   pluginOptions: {
-    lintStyleOnBuild: true,
+    lintStyleOnBuild: 'error', // default error，prevent compile  
     stylelint: {
       fix: true, // boolean (default: true)
       files: '', // string | [string] (default: ['src/**/*.{vue,htm,html,css,sss,less,scss}'])
@@ -40,12 +42,12 @@ module.exports = {
 ## Installing in an already created project
 
 ```
-npm install -D @ascendancyy/vue-cli-plugin-stylelint
-vue invoke @ascendancyy/vue-cli-plugin-stylelint
+npm install -D @tencent/vue-cli-plugin-stylelint
+vue invoke @tencent/vue-cli-plugin-stylelint
 ```
 
 > There is also a shorthand to invoke the plugin  
-> `vue invoke @ascendancyy/stylelint`
+> `vue invoke @tencent/stylelint`
 
 ## webpack-chain Injections
 
