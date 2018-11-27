@@ -1,6 +1,6 @@
 {
   "name": "@tencent/vue-cli-plugin-stylelint",
-  "version": "1.0.1",
+  "version": "1.2.0",
   "description": "stylelint plugin for vue-cli",
   "main": "index.js",
   "scripts": {
@@ -33,7 +33,7 @@
     "micromatch": "^3.1.10",
     "stylelint": "^8.4.0",
     "stylelint-codeframe-formatter": "^1.0.4",
-    "stylelint-webpack-plugin": "^0.10.4"
+    "stylelint-webpack-plugin": "^0.10.5"
   },
   "devDependencies": {
     "@ascendancyy/eslint-config-eva": "^2.0.1",
